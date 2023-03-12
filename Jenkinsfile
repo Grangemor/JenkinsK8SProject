@@ -33,7 +33,7 @@ pipeline {
         steps{   
             script {
                 withKubeConfig([credentialsId: 'K8S', serverUrl: '']) {
-                sh ('kubectl apply -f  deployment.yaml')
+                sh ('kubectl apply -f  deployment.yml')
                 }
             }
         }
